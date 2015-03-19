@@ -33,11 +33,6 @@
 
 
 
-    $app->get("/categories",function() use ($app) {
-        return $app['twig']->render('/categories.html.twig', array('categories' =>Category::getAll()));
-    });
-
-
 
     $app->get("/categories/{id}",function($id) use ($app) {
 
